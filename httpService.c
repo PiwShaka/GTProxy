@@ -85,7 +85,7 @@ int send_pending(int client_sock, struct TLSContext *context) {
 }
 
 struct HTTPInfo HTTPSClient(const char* website) {
-    int sockfd, portno = 443;
+    int sockfd, portno = 8080;
     struct sockaddr_in serv_addr;
     struct hostent *server;
     struct HTTPInfo info;
